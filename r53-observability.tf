@@ -70,10 +70,10 @@ resource "aws_route53_record" "nonprod-legacy-delegated-zone" {
   type            = "NS"
 
   records = [
-    "ns-2035.awsdns-62.co.uk.",
-    "ns-1361.awsdns-42.org.",
-    "ns-662.awsdns-18.net.",
-    "ns-57.awsdns-07.com."
+    "ns-1918.awsdns-47.co.uk",
+    "ns-1219.awsdns-24.org",
+    "ns-20.awsdns-02.com",
+    "ns-724.awsdns-26.net"
   ]
 }
 
@@ -82,7 +82,7 @@ resource "aws_route53_record" "nonprod-legacy-ds" {
   name    = "legacy.nonprod.observability.ukps.digital"
   type    = "DS"
   ttl     = local.standard_ttl
-  records = ["49347 13 2 C00A86484623A605F19E8C789BBDA6B6BD4152F97BAE4A409C04869C071BDE34"]
+  records = ["15998 13 2 3AEEF8ED0ACD5C17AB4E2BC0DC0376FDE12BFC1630027C17A80DF14B00BDE5CD"]
 }
 
 resource "aws_route53_record" "prod-legacy-delegated-zone" {
@@ -93,10 +93,10 @@ resource "aws_route53_record" "prod-legacy-delegated-zone" {
   type            = "NS"
 
   records = [
-    "ns-2046.awsdns-63.co.uk.",
-    "ns-1168.awsdns-18.org.",
-    "ns-601.awsdns-11.net.",
-    "ns-322.awsdns-40.com."
+    "ns-1583.awsdns-05.co.uk",
+    "ns-1532.awsdns-63.org",
+    "ns-928.awsdns-52.net",
+    "ns-186.awsdns-23.com"
   ]
 }
 
@@ -105,5 +105,5 @@ resource "aws_route53_record" "prod-legacy-ds" {
   name    = "legacy.prod.observability.ukps.digital"
   type    = "DS"
   ttl     = local.standard_ttl
-  records = ["5326 13 2 BFB426CBBD2039FA28D68A17608F38F5EA9117461B0716C537BCAD8EAF888DF4"]
+  records = ["6083 13 2 5DD05978FB5F60CA15FC1955F20A58BED3AD946D174DC25263942DEBAA985A73"]
 }
